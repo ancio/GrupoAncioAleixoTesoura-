@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="7dp"
+    android:layout_marginLeft="11dp"
+    android:layout_marginRight="7dp"
+    android:layout_marginTop="11dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="@dimen/cardview_default_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:background="#eee">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a" />
+
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="252dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignTop="@+id/layoutDate"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/img"
+            android:singleLine="true"
+            android:text="Title"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/layoutDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="90dp"
+            android:layout_toRightOf="@id/source"
+            android:background="@drawable/round_white"
+            android:padding="6dp">
+
+
+            <TextView
+                android:id="@+id/publisherAt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Full Time"
+                android:textColor="@color/colorPrimaryDark" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/img"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="16dp"
+            android:text="Entreprises M.O" />
+
+
+        <ImageView
+            android:id="@+id/ic1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/author"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/desc"
+            android:scaleType=""
+            android:src="@drawable/ic_work_black_24dp" />
+
+        <TextView
+            android:id="@+id/source"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/desc"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="$100 - $500"
+            android:textColor="@ref/0x7f05002f"
+            />
+
+        <ImageView
+            android:id="@+id/ic2"
+            android:layout_width="23dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/author"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/source"
+            android:src="@drawable/ic_attach_money_black_24dp" />
+        <ImageView
+            android:id="@+id/ic3"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="23dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/author"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/source"
+            android:src="@drawable/ic_place_black_24dp" />
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/desc"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="40dp"
+            android:drawablePadding="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="An established"
+            android:textColor="@ref/0x7f05002f"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+</FrameLayout>
