@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".MainActivity">
+    tools:context="at.ancio.empregosociomatico.activities.MainActivity">
 
 
     <ImageView
@@ -17,14 +17,17 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="59dp"
         android:contentDescription="TODO"
-        android:src="@drawable/user_ph"/>
+        app:srcCompat="@drawable/user_ph" />
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="227dp"
-        android:layout_height="30dp"
-        android:layout_centerInParent="true"
-        android:background="#110000"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="257dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_user"
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
@@ -34,11 +37,12 @@
     <EditText
         android:id="@+id/editText2"
         android:layout_width="227dp"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="210dp"
-        android:background="#110000"
+        android:layout_marginBottom="196dp"
+        android:background="#11000000"
+        android:drawableStart="@drawable/ic_action_pass"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword" />
@@ -47,12 +51,11 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:layout_bellow="@+id/editText"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="124dp"
+        android:layout_marginBottom="103dp"
         app:cardBackgroundColor="@color/colorPrimary"
         app:cardCornerRadius="25dp"
-        app:cardElevation="10dp">
+        app:cardElevation="10dp" >
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -66,7 +69,6 @@
                 android:text="Login"
                 android:textColor="#fff"
                 android:textSize="18dp"
-
                 />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
@@ -77,9 +79,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="48dp"
         android:text="Don't have account Register here"
-        android:textColor="#000"
         android:textSize="14dp" />
 
 </RelativeLayout>

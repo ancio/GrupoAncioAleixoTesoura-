@@ -1,42 +1,49 @@
 package at.ancio.empregosociomatico.models;
-import com.google.gson.annotations.Expose;
-import  com.google.gson.annotations.SerializedName;
-import java.util.List;
 
 public class Vagas {
-    @SerializedName("status")
-    @Expose
-    private String status;
-    @SerializedName("totalResult")
-    @Expose
-    private int totalResult;
 
-    @SerializedName("articles")
-    @Expose
+    private String nome;
+    private String empresa;
+    private String Disponibilidade;
+    private String image;
+    private String description;
+    private String data;
 
-    private List<Article> article;
-
-    public String getStatus() {
-        return status;
+    public Vagas() {
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public Vagas(String nome, String empresa, String disponibilidade, String image, String description, String data) {
+        this.nome = nome;
+        this.empresa = empresa;
+        Disponibilidade = disponibilidade;
+        this.image = image;
+        this.description = description;
+        this.data = data;
     }
 
-    public int getTotalResult() {
-        return totalResult;
+    public String getNome() {
+        return nome;
     }
 
-    public void setTotalResult(int totalResult) {
-        this.totalResult = totalResult;
+    public String getEmpresa() {
+        return empresa;
     }
 
-    public List<Article> getArticle() {
-        return article;
+    public String getDisponibilidade() {
+        return Disponibilidade;
     }
 
-    public void setArticle(List<Article> article) {
-        this.article = article;
+    public String getImage() {
+        return image;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getData() {
+        return data;
     }
 }
+
+
