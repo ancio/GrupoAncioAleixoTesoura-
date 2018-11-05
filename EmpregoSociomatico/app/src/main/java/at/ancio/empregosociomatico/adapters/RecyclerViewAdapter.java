@@ -45,12 +45,12 @@ RequestOptions option;
                @Override
                public void onClick(View v) {
                    Intent i = new Intent(mContext, VagasActivity.class);
-                   i.putExtra( name "Vagas_name",mData.get(viewHolder.getAdapterPosition()).getNome());
-                   i.putExtra( name "Vagas_Empresa",mData.get(viewHolder.getAdapterPosition()).getEmpresa());
-                   i.putExtra( name "Vagas_Disponibilidade",mData.get(viewHolder.getAdapterPosition()).getDisponibilidade());
-                   i.putExtra( name "Vagas_Data",mData.get(viewHolder.getAdapterPosition()).getData());
-                   i.putExtra( name "Vagas_Descricao",mData.get(viewHolder.getAdapterPosition()).getDescription());
-                   i.putExtra( name "Vagas_imagem",mData.get(viewHolder.getAdapterPosition()).getImage());
+                   i.putExtra("Vagas_name",mData.get(viewHolder.getAdapterPosition()).getNome());
+                   i.putExtra("Vagas_Empresa",mData.get(viewHolder.getAdapterPosition()).getEmpresa());
+                   i.putExtra("Vagas_Disponibilidade",mData.get(viewHolder.getAdapterPosition()).getDisponibilidade());
+                   i.putExtra( "Vagas_Data",mData.get(viewHolder.getAdapterPosition()).getData());
+                   i.putExtra("Vagas_Descricao",mData.get(viewHolder.getAdapterPosition()).getDescription());
+                   i.putExtra("Vagas_imagem",mData.get(viewHolder.getAdapterPosition()).getImage());
 
               mContext.startActivity(i);
                }

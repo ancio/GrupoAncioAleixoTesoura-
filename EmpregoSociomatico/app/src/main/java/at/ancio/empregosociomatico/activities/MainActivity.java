@@ -21,11 +21,10 @@ import java.util.List;
 import at.ancio.empregosociomatico.R;
 import at.ancio.empregosociomatico.models.Vagas;
 import at.ancio.empregosociomatico.adapters.RecyclerViewAdapter;
-import at.ancio.empregosociomatico.models.Vagas;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final String JSON_URL = "http://emprego.sociomatico.com/wp-json/wp/v2/";
+    private final String JSON_URL = "http://emprego.sociomatico.com/wp-json/wp/v2";
    private JsonArrayRequest request;
      private RequestQueue requestQueue;
      private List<Vagas> fvaga;
@@ -54,12 +53,12 @@ public class MainActivity extends AppCompatActivity {
                     try {
                         jsonObject = response.getJSONObject(i);
                         Vagas vagas = new Vagas();
-                        vagas.getNome(jsonObject.getString( name: "name"));
-                         vagas.getDescription(jsonObject.getString( name: "Description"));
-                         vagas.getEmpresa(jsonObject.getString(name:"empresa");
-                         vagas.getDisponibilidade(jsonObject.getString(name: "disponibilidade"));
-                         vagas.getData(jsonObject.getString(name: "date"));
-                         vagas.getImage(jsonObject.getString(name: "imag"));
+                        vagas.getNome();
+                         vagas.getDescription();
+                         vagas.getEmpresa();
+                         vagas.getDisponibilidade();
+                         vagas.getData();
+                         vagas.getImage();
                         fvaga.add(vagas);
 
                     } catch (JSONException e) {
