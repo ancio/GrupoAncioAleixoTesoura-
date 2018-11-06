@@ -35,9 +35,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         fvaga = new ArrayList<>();
-        recyclerView = findViewById(R.id.recyclerviewid);
+        recyclerView = findViewById(R.id.appbarlayout_id);
         jsonrequest();
     }
+
+    ////////////////////////////////////////json request //////////////////////////////////////////
 
     private void jsonrequest() {
 
@@ -52,13 +54,14 @@ public class MainActivity extends AppCompatActivity {
                 for(int i=0; i <response.length();i++){
                     try {
                         jsonObject = response.getJSONObject(i);
+
                         Vagas vagas = new Vagas();
-                        vagas.getNome();
-                         vagas.getDescription();
-                         vagas.getEmpresa();
-                         vagas.getDisponibilidade();
-                         vagas.getData();
-                         vagas.getImage();
+                        vagas.setNome(jsonObject.getString("title"));
+                         vagas.setDescription(jsonObject.getString("content"));
+                         vagas.setEmpresa(jsonObject.getString("author"));
+                         vagas.setDisponibilidade(jsonObject.getString("status"));
+                         vagas.setData(jsonObject.getString("date"));
+                         vagas.setImage(jsonObject.getString("template"));
                         fvaga.add(vagas);
 
                     } catch (JSONException e) {

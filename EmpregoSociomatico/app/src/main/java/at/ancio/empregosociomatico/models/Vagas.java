@@ -44,6 +44,30 @@ public class Vagas {
     public String getData() {
         return data;
     }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setEmpresa(String empresa) {
+        this.empresa = empresa;
+    }
+
+    public void setDisponibilidade(String disponibilidade) {
+        Disponibilidade = disponibilidade;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
 }
 
 
